@@ -1,0 +1,114 @@
+{% load static %}
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title> KTVC | {%block title%}{%endblock%}</title>
+    <!-- BOOTSTRAP CORE STYLE CSS -->
+
+    <link rel="stylesheet" href="{% static 'assets/css/bootstrap.css' %}">
+    
+    <!-- FONT AWESOME CSS -->
+    
+    <link rel="stylesheet" href="{% static 'assets/css/font-awesome.min.css' %}">
+     <!-- FLEXSLIDER CSS -->
+     <link rel="stylesheet" href="{% static 'assets/css/flexslider.css' %}">
+    
+    <!-- CUSTOM STYLE CSS -->
+    <link rel="stylesheet" href="{% static 'assets/css/style.css' %}">
+      
+  <!-- Google	Fonts -->
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,300' rel='stylesheet' type='text/css' />
+</head>
+<body >
+   
+ <div class="navbar navbar-inverse navbar-fixed-top " id="menu">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                
+                <a class="navbar-brand" href=""><img class="logo-custom" src="{% static 'assets/img/logo180-50.png' %}" alt=""/></a>
+            </div>
+            <div class="navbar-collapse collapse move-me">
+                <ul class="nav navbar-nav navbar-right">
+                    <li ><a href="">HOME</a></li>
+                     <li><a href="#features-sec">Students Portal</a></li>
+                    <li><a href="{% url 'index' %}">KTVC-LMS</a></li>
+                     <li><a href="#course-sec">COURSES</a></li>
+                     <li><a href="#contact-sec">CONTACT</a></li>
+                </ul>
+            </div>
+           
+        </div>
+    </div>
+      <!--NAVBAR SECTION END-->
+      {% block content %}
+
+      {% endblock %}
+
+
+    <!-- FACULTY SECTION END-->
+    
+    
+             <div class="row set-row-pad" >
+    <div class="col-lg-4 col-md-4 col-sm-4   col-lg-offset-1 col-md-offset-1 col-sm-offset-1 " data-scroll-reveal="enter from the bottom after 0.4s">
+
+                    <h2 ><strong>Our Location </strong></h2>
+        <hr />
+                    <div>
+                        <h4>438 - 20303 , Ol Kalou,</h4>
+                        <h4>Nyandarua.</h4>
+                        <h4><strong>Call:</strong>  0707200682 </h4>
+                        <h4><strong>Email: </strong>mwangim24@gmail.com</h4>
+                    </div>
+
+
+                </div>
+                 <div class="col-lg-4 col-md-4 col-sm-4   col-lg-offset-1 col-md-offset-1 col-sm-offset-1" data-scroll-reveal="enter from the bottom after 0.4s">
+
+                    <h2 ><strong>Social Conectivity </strong></h2>
+        <hr />
+                    <div >
+                        
+                        <a href="#">  <img src="{% static 'assets/img/Social/facebook.png' %}" alt="" /> </a>
+                        <a href="#"> <img src="{% static 'assets/img/Social/google-plus.png' %}" alt="" /></a>
+                        <a href="#"> <img src="{% static 'assets/img/Social/twitter.png' %}" alt="" /></a>
+                    </div>
+                    </div>
+
+
+                </div>
+                 </div>
+     <!-- CONTACT SECTION END-->
+    <div id="footer">
+          &copy <a href="" style="color: #fff" target="_blank">Design by : binarytheme.com</a>
+    </div>
+     <!-- FOOTER SECTION END-->
+   
+    <!--  Jquery Core Script -->
+        <script type="text/javascript" src="{% static 'assets/js/jquery-1.10.2.js' %}"></script>
+       
+    <!--  Core Bootstrap Script -->
+        <script type="text/javascript" src="{% static 'assets/js/bootstrap.js' %}"></script>
+    
+    <!--  Flexslider Scripts --> 
+         
+         <script type="text/javascript" src="{% static 'assets/js/jquery.flexslider.js' %}"></script>
+     <!--  Scrolling Reveal Script -->
+    
+    <script type="text/javascript" src="{% static 'assets/js/scrollReveal.js' %}"></script>
+    <!--  Scroll Scripts --> 
+        <script type="text/javascript" src="{% static 'assets/js/jquery.easing.min.js' %}"></script>
+    
+    <!--  Custom Scripts --> 
+        <script type="text/javascript" src="{% static 'assets/js/custom.js' %}"></script>
+        
+</body>
+</html>
